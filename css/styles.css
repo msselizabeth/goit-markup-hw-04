@@ -10,6 +10,7 @@
     --color-active: #2196f3;
     --color-secondary: #757575;
     --color-text: #fff;
+    --color-icons: #afb1b8;
     --background-color-section: #f5f4fa;
     --background-color-click: #188CE8;
     --background-color-primary: #fff;
@@ -182,22 +183,8 @@ margin: 0;}
     line-height: 1.172;
     letter-spacing: 0.03em;
     }
-.benefits-item::before { content: "";
-    display: block;
- width: 270px;
- height: 120px;
-background-color: var(--bg-icons-color);
 
-background-position: center;
-background-size: 70px;
-background-repeat: no-repeat;
 
-margin-bottom: 30px;
-
-}
-
-.icon-anthena::before { background-image: url("../images/antenna\ 1.svg");
-}
 
 .benefits-paragraph { margin: 0;
    
@@ -257,7 +244,7 @@ margin-bottom: 30px;
       font-size: 36px;}
 
 .team-box { padding-top: 30px;
- padding-bottom: 30px;}
+ padding-bottom: 16px;}
 
 .name{
 margin: 0;
@@ -277,17 +264,44 @@ margin-bottom: 10px;
     letter-spacing: 0.03em;
 }
 
-.social-list { display: flex;
+.social-link { padding: 12px;
+    border: none;
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
     
+    color: var(--color-icons);
+    text-decoration: none;   
+}
+.social-link:hover { background-color: var(--color-active);
+color: var(--color-text);}
+
+.social-item { margin-right: 10px;}
+.social-item:last-child { margin-right: 0;}
+
+
+.social-list { display: flex;
+    justify-content: center;
+    align-items: center;
+
+padding: 0;
+padding-bottom: 30px;
+padding-left: 32px;
+padding-right: 32px;
+
 }
 
-.social-icon { padding-top: 16px;
-   fill: #AFB1B8;
-  
-    width: 44px;
-      height: 44px;}
+.social-icon { 
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+/* .social-icon:hover { fill: var(--color-text); } */
+    
 
-    /* Подвал */
+/* Подвал */
 .footer-logo {
     
     color: var(--color-text);
