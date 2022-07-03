@@ -11,6 +11,7 @@
     --color-secondary: #757575;
     --color-text: #fff;
     --color-icons: #afb1b8;
+    --color-icons-footer: #ffffff;
     --background-color-section: #f5f4fa;
     --background-color-click: #188CE8;
     --background-color-primary: #fff;
@@ -18,6 +19,7 @@
     --font-family-primary: 'Roboto', sans-serif;
     --font-family-logo: 'Raleway', sans-serif;
     --bg-icons-color: #F5F4FA;
+    --bg-icons-footer-color: rgba(255,255,255,0.1);
 }
 
 body { font-family: var(--font-family-primary);
@@ -28,7 +30,7 @@ font-size: 14px;
 }
 
 /* Утилиты */
-    .buttons-portfolio, .examples-list, .menu, .benefits-list, .services-list, .team-list , .social-list {
+    .buttons-portfolio, .examples-list, .menu, .benefits-list, .services-list, .team-list , .social-list , .footer-social-list{
     list-style-type: none;
 }
 
@@ -38,6 +40,13 @@ font-size: 14px;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+.section { max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /* Шапка  */
@@ -116,9 +125,7 @@ margin-left: auto;
   
   /* Styles index.html */
 
-.section { padding-top: 94px;
-    padding-bottom: 94px;
-}
+
     
     /* Кнопка */
 .button { max-width: 1600px;
@@ -275,6 +282,24 @@ margin-bottom: 10px;
     letter-spacing: 0.03em;
 }
 
+.social-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+}
+.social-item {
+    margin-right: 10px;
+}
+.social-item:last-child {
+    margin-right: 0;
+}
+
 .social-link { padding: 12px;
     border: none;
     display: inline-block;
@@ -289,30 +314,35 @@ margin-bottom: 10px;
 .social-link:hover { background-color: var(--color-active);
 color: var(--color-text);}
 
-.social-item { margin-right: 10px;}
-.social-item:last-child { margin-right: 0;}
-
-
-.social-list { display: flex;
-    justify-content: center;
-    align-items: center;
-
-padding: 0;
-padding-bottom: 30px;
-padding-left: 32px;
-padding-right: 32px;
-
-}
 
 .social-icon { 
   fill: currentColor;
   width: 20px;
   height: 20px;
 }
-/* .social-icon:hover { fill: var(--color-text); } */
+
     
 
 /* Подвал */
+
+/* .footer { display: flex;
+    
+   max-width: 1600px;
+margin-left: auto;
+margin-right: auto;} */
+
+
+.footer-box { display: flex;
+align-items: baseline;}
+
+.adress-box {
+    width: 231px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
 .footer-logo {
     
     color: var(--color-text);
@@ -321,14 +351,15 @@ padding-right: 32px;
  font-weight: 700;
  font-size: 26px;
  line-height: 1.192;
-letter-spacing: 0.03em;
+ letter-spacing: 0.03em;
 }
 .footer { 
     padding-top: 60px;
     padding-bottom: 60px;
 
-background-color: var(--background-color-bord);
-line-height: 1.72; }
+  background-color: var(--background-color-bord);
+  line-height: 1.72; }
+
 .address { margin-top: 20px;
     
     color: var(--color-text);
@@ -346,6 +377,61 @@ color: rgba(255, 255, 255, 0.6);
 letter-spacing: 0.03em;}
 .footer-contacts:hover {color: var(--color-active);}
 .footer-contacts:focus {color: var(--color-active);}
+
+/* Icons */
+
+.footer-social-box {
+    width: 208px;
+    margin: 0;
+    padding: 0;
+    margin-left: 70px;
+}
+
+.social-title {
+    margin: 0;
+    margin-bottom: 20px;
+
+    color: var(--color-text);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+}
+
+.footer-social-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-social-item {
+    margin-right: 10px;
+}
+.footer-social-item:last-child { margin-right: 0;}
+
+.footer-social-link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px;
+
+     color: var(--color-icons-footer);
+    text-decoration: none;   
+
+    background-color:var(--bg-icons-footer-color)
+
+}
+
+.footer-social-icon { fill: currentColor;
+    width: 20px;
+    height: 20px;
+}
+
+.footer-social-link:hover {
+    background-color: var(--color-active);
+}
 
 /* Portfolio */
 
@@ -374,8 +460,9 @@ background-color: var(--background-color-section);
 cursor: pointer;
 border-radius: 4px;
 border: 1px;}
-.buttons:hover {background-color: var(--color-active);}
-
+.buttons:hover {background-color: var(--color-active);
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
+.buttons:focus { box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
 
 /*Примеры работ */
 
@@ -395,6 +482,7 @@ padding: 0;}
     margin-right: 30px;
     margin-bottom: 30px;
 }
+.examples-item:hover { box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
 
 .examples-item:nth-child(3n) { margin-right: 0;
  }
