@@ -87,6 +87,8 @@ align-items: center;}
 margin-left: auto;
 }
 
+
+
 .menu-contacts { color: var(--color-secondary);
     text-decoration: none;
     font-weight: 500;
@@ -96,18 +98,27 @@ margin-left: auto;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    margin-right: 50px; }
-    .menu-contacts:last-child { margin: 0;}
+    margin-right: 50px; 
+}
 
-    .menu-contacts:hover , .menu-contacts:focus {color: var(--color-active);
-    }
-  
-  
-    /* Styles index.html */
+.menu-contacts:last-child { margin: 0;
+}
 
-    .section { padding-top: 94px;
+.menu-contacts:hover , .menu-contacts:focus {color: var(--color-active);
+}
+  
+.header-icon { width: 16px;
+      height: 12px;
+      margin-right: 10px;
+      fill: currentColor;
+}
+   
+  
+  /* Styles index.html */
+
+.section { padding-top: 94px;
     padding-bottom: 94px;
-    }
+}
     
     /* Кнопка */
 .button { max-width: 1600px;
