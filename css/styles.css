@@ -530,7 +530,7 @@ background-color: var(--background-color-section);
 cursor: pointer;
 border-radius: 4px;
 border: 1px;}
-.buttons:hover , .buttons:focus {background-color: var(--color-active);
+.buttons:hover , .buttons:focus { color: var(--color-text); background-color: var(--color-active);
  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
 
 
