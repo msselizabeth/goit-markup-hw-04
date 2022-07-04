@@ -42,7 +42,7 @@ font-size: 14px;
     padding-right: 15px;
 }
 
-.section { max-width: 1600px;
+.section { 
     margin-left: auto;
     margin-right: auto;
     padding-top: 94px;
@@ -67,7 +67,7 @@ align-items: center;}
 }   
 .logo-word { color: var(--color-active);
     }
-
+.hero { max-width: 1600px;}
 
 .menu { display: flex;
     padding: 0px;
@@ -89,7 +89,7 @@ align-items: center;}
     padding-top: 32px;
     padding-bottom: 32px; }
 
-.menu-link:hover {color: var(--color-active); 
+.menu-link:hover , .menu-link:focus {color: var(--color-active); 
     }
 
 .header-contacts { display: flex;
@@ -185,12 +185,13 @@ margin-left: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-width: 270px;
+
+    width: 270px;
 height: 120px;
 padding: 0;
 margin-bottom: 30px;
 text-align: center;
-
+border-radius: 4px;
 }
 
 .benefits-icon { 
@@ -309,9 +310,9 @@ margin-bottom: 10px;
     align-items: center;
 
     padding: 0;
-    padding-bottom: 30px;
-    padding-left: 32px;
-    padding-right: 32px;
+        padding-bottom: 30px;
+        padding-left: 32px;
+        padding-right: 32px;
 
 }
 .social-item {
@@ -335,7 +336,7 @@ margin-bottom: 10px;
     color: var(--color-icons);
     text-decoration: none;   
 }
-.social-link:hover { background-color: var(--color-active);
+.social-link:hover , .social-link:focus { background-color: var(--color-active);
 color: var(--color-text);}
 
 
@@ -365,13 +366,15 @@ letter-spacing: 0.03em;
     margin: 0;
 }
 
-.clients-item { margin-right: 30px;}
+.clients-item { margin-right: 30px;
+ }
 .clients-item:last-child { margin-right: 0;}
 
 .clients-link { display: flex;
   justify-content: center;
- text-align: center;
+ align-items:  center;
 
+ 
  color: var(--color-icons);
 
  width: 170px;
@@ -383,11 +386,9 @@ letter-spacing: 0.03em;
 .clients-icon { 
     fill: currentColor;
     
-    margin: auto;
-    width: 106px;
-    height: 60px;}
+}   
 
-.clients-link:hover { border: 1px solid var(--color-active);
+.clients-link:hover , .clients-link:focus { border: 1px solid var(--color-active);
  color: var(--color-active);}
     
 /* Подвал */
@@ -498,7 +499,7 @@ letter-spacing: 0.03em;}
     height: 20px;
 }
 
-.footer-social-link:hover {
+.footer-social-link:hover , .footer-social-link:focus {
     background-color: var(--color-active);
 }
 
@@ -529,9 +530,9 @@ background-color: var(--background-color-section);
 cursor: pointer;
 border-radius: 4px;
 border: 1px;}
-.buttons:hover {background-color: var(--color-active);
+.buttons:hover , .buttons:focus {background-color: var(--color-active);
  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
-.buttons:focus { box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
+
 
 /*Примеры работ */
 
